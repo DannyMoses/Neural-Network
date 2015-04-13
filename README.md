@@ -20,6 +20,10 @@ a sigmoid function. That is:
 
 ![](Images/image3.png)
 
+There are several other logistical functions, here are a few
+
+![](Images/image4.png)
+
 To start things off, you need to declare the architecture of your neural network. To construct a "topology" aka the architecture of the neural network, simply assign the vector<unsigned> to the vector of values you desire.
 
 For example:
