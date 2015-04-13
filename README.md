@@ -5,7 +5,7 @@ Artificial neural networks is a type of statistical learning algorithm that is i
 
 General Neural Network
 
-![](Images/Image1.png)
+![](images/image1.png)
 
 This is a general case neural network.
 
