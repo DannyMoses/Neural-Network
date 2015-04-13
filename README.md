@@ -11,10 +11,16 @@ Each circle represents a Neuron. What a neuron does is sums the inputs of the ou
 
 ![](Images/image2.png)
 
+A logistic function, also called a transfer function, maps the output of a neuron to a set of values. Generally to the range of the values is [-1, 1] or [0,1]. There are a few ways to achieve this. The first is called 
+a sigmoid function. That is: 
 
-To start things off, you need to declare the architecture of your neural network. 
-To construct a "topology" aka the architecture of the neural network,
-simple assign the vector<unsigned> to the vector of values you desire.
+<tt>
+1/(1+e^x)
+</tt>
+
+![](Images/image3.png)
+
+To start things off, you need to declare the architecture of your neural network. To construct a "topology" aka the architecture of the neural network, simply assign the vector<unsigned> to the vector of values you desire.
 
 For example:
 
@@ -27,13 +33,5 @@ and an output layer of 2 nodes.
 
 The declaration of a nerual network, called a Net, requires 2 parameters, a topology,
 as well as a transfer function.
-
-A transfer function maps the output of a neuron to a set of values. Generally the range
-of the values is [-1, 1] or [0,1]. There are a few ways to achieve this. The first is called 
-a sigmoid function. That is: 
-
-<tt>
-1/(1+e^x)
-</tt>
 
 To be continued when I have more downtime in the lab.
