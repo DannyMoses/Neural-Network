@@ -7,7 +7,10 @@ General Neural Network
 
 ![](Images/image1.png)
 
-This is a general case neural network.
+Each circle represents a Neuron. What a neuron does is sums the inputs of the outputs of the neurons that feed into it, remaps thae sum with accordance to a logistical function then sends that value to the nodes it is connected to to the right.
+
+![](Images/image2.png)
+
 
 To start things off, you need to declare the architecture of your neural network. 
 To construct a "topology" aka the architecture of the neural network,
