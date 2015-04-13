@@ -23,6 +23,10 @@ as well as a transfer function.
 
 A transfer function maps the output of a neuron to a set of values. Generally the range
 of the values is [-1, 1] or [0,1]. There are a few ways to achieve this. The first is called 
-a sigmoid function. That is:
+a sigmoid function. That is: 
+
+<tt>
+1/(1+e^x)
+</tt>
 
 To be continued when I have more downtime in the lab.
