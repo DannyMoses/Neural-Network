@@ -1,6 +1,5 @@
 #include "../include/net.h"
 
-
 Net::Net(const vector<unsigned> &topology,const string &transferFunction)
 {
     //size
