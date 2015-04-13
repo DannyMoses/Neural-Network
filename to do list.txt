@@ -1,0 +1,9 @@
+1. Clean up code, put loading file stuff in it's own thing.
+2. Add more logistical functions.
+3. Add gui for visualization of the network training
+4. Save and load Neural Networks
+5. Add more backpropagation methods such as RPROP, Quick Prop, Batch and Incremental
+6. Threading capability
+7. Cache optimiazation
+8. Cross Platform integration
+9. Add Java and Python support
