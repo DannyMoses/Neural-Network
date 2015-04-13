@@ -33,13 +33,13 @@ double  Neuron::getOutputValue() const
 
 double Neuron::transferFunctionTanH(double x)
 {
-    // tanh - output range [-1.0..1.0]
+    //tanh - output range [-1.0..1.0]
     return tanh(x);
 }
 
 double Neuron::transferFunctionTanHDerivative(double x)
 {
-    // tanh derivative aproximation
+    //tanh derivative aproximation
     //return 1.0 - x * x;
 
     return 1.0 - tanh(x) * tanh(x);
@@ -47,13 +47,13 @@ double Neuron::transferFunctionTanHDerivative(double x)
 
 double Neuron::transferFunctionSig(double x)
 {
-    // tanh - output range [-1.0..1.0]
+    //sigmoid output range [0.0,.1.0]
     return 1/(1+exp(-1*x));
 }
 
 double Neuron::transferFunctionSigDerivative(double x)
 {
-    // tanh derivative aproximation
+    //sigmoid derivative aproximation
     return exp(-1*x)/pow((1+exp(-1*x)),2);
 }
 
@@ -64,7 +64,7 @@ double Neuron::transferFunctionStep(double x)
 
 double Neuron::transferFunctionStepDerivative()
 {
-    // step derivative aproximation
+    //step derivative aproximation
     return 1.0 ;
 }
 
@@ -72,8 +72,8 @@ void Neuron::feedForward(const Layer &prevLayer)
 {
     double sum=0.0;
 
-    // Sum the previous layer's outputs (which are our inputs)
-    // Include the bias node from the previous layer.
+    //Sum the previous layer's outputs (which are our inputs)
+    //Include the bias node from the previous layer.
     for (unsigned n = 0; n < prevLayer.size();  n++){
         sum+=prevLayer[n].getOutputValue() * prevLayer[n].outputWeights[index].weight;
     }
@@ -99,7 +99,7 @@ double Neuron::sumDOW(const Layer &nextLayer) const
 {
     double sum = 0.0;
 
-    // Sum our contributions of the errors at the nodes we feed.
+    //Sum our contributions of the errors at the nodes we feed.
     for(unsigned n = 0; n < nextLayer.size() -1; n++)
     {
         sum+=outputWeights[n].weight * nextLayer[n].gradient;
@@ -115,8 +115,8 @@ void Neuron::calculateHiddenGradients(const Layer &nextLayer)
 }
 
 void Neuron::updateInputWeights(Layer &prevLayer, const double &eta, const double &alpha){
-    // 	The weights to be updated are in the Connection container
-    // in the neurons in the preceding layer
+    // The weights to be updated are in the Connection container
+    //in the neurons in the preceding layer
     for(unsigned n = 0; n < prevLayer.size(); n++)
     {
         Neuron &neuron = prevLayer[n];
@@ -124,11 +124,11 @@ void Neuron::updateInputWeights(Layer &prevLayer, const double &eta, const doubl
 
         double oldDeltaWeight = conn.deltaWeight;
         double newDeltaWeight =
-                // Individual input, magnified by the gradient and train rate:
+                //Individual input, magnified by the gradient and train rate:
                 eta
                 * neuron.getOutputValue()
                 * gradient
-                // Also add momentum = a fraction of the previous delta weight;
+                //Also add momentum = a fraction of the previous delta weight;
                 + alpha
                 * oldDeltaWeight;
 
