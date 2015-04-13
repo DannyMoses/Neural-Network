@@ -4,6 +4,7 @@
 #include <vector>
 #include <iostream>
 #include <cassert>
+#include <string>
 #include "layer.h"
 #include <string.h>
 
@@ -13,6 +14,7 @@ class Net{
 
 	double error;
 	double recentAverageError;
+	string transferfunction;
 	vector<Layer> layers ;// layers[layerNumber][neuronNumber]
 
 public:
