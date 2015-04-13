@@ -6,12 +6,9 @@ simple assign the vector<unsigned> to the vector of values you desire.
 
 For example:
 <tt>
-  vector<unsigned> topology;
-  topology.push_back(2);
-  topology.push_back(4);
-  topology.push_back(3);
-  topology.push_back(2);
+  vector<unsigned> topology (2,4,3,2);
 </tt>
+
 will create a neural network with 2 input nodes, 2 hidden layers with 4 and 3 nodes, respectively,
 and an output layer of 2 nodes
 
