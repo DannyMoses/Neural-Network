@@ -28,7 +28,7 @@ The derivatives of the logistical functions provided have positive derivatives f
 
 The last part of a neural network are the weights that accompany each connection. These weights are the dynamic part of the network. They are adjusted in a process called back propagation in an attempt to generate the proper output given an input for every case of inputs and outputs.
 
-To start things off, you need to declare the architecture of your neural network. To construct a "topology" aka the architecture of the neural network, simply assign the vector<unsigned> to the vector of values you desire.
+To start things off, you need to declare the architecture of your neural network. To construct a "topology" of the neural network, simply fill the vector with the values you want
 
 For example:
 
