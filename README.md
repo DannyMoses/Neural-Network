@@ -3,6 +3,10 @@ Artifical Neural Network
 
 Artificial neural networks is a type of statistical learning algorithm that is inspired by biological neural networks (the central nervous systems of animals, in particular the brain) and are used to estimate or approximate functions that can depend on a large number of inputs and are generally unknown. Artificial neural networks are generally presented as systems of interconnected "neurons" which can compute values from inputs, and are capable of machine learning thanks to their adaptive nature.
 
+General Neural Network
+
+![](Images/Image1.png)
+
 This is a general case neural network.
 
 To start things off, you need to declare the architecture of your neural network. 
