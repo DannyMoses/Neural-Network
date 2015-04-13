@@ -169,7 +169,7 @@ int main(int argc, char *argv[])
     if(realtime)
     {
         //Declare the architecture of your network
-        // e.g., { 3, 2, 1 }
+        //Example: vector<unsigned> topology (2,4,4,2);
         vector<unsigned> topology;
 
         //Restrict your node output to [-1, 1] with a
@@ -235,7 +235,11 @@ int main(int argc, char *argv[])
             //vector<double> motor_values;
             //motor_values = net.getLayerValues(3);
             //Send motor_values to the appropriate place
-
+            
+            //wait a finite amount of time, say 50 ms
+            //to see what the motor values you just got
+            //equate to in terms of sensor output
+            //wait(50);
             //get updated sensor data
 
             //Store updataed sensor data as the output of the network,
