@@ -44,4 +44,6 @@ The declaration of a nerual network, called a Net, requires 2 parameters, a topo
   string transferfunction = "sig"
 </tt>
 
+This program has the functions and derivatives of the logistical functions step, sigmoid, as well as tanh, however, it is programmed to use tanh regardless of the transferfunction you define. This will be changed to account for different transferfunctions.
+
 To be continued when I have more downtime in the lab.
