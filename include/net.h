@@ -16,13 +16,12 @@ class Net{
 	vector<Layer> layers ;// layers[layerNumber][neuronNumber]
 
 public:
-	//Net(const vector<unsigned> &topology);
 	Net(const vector<unsigned> &topology,const string &transferFunction);
 
 	//feedForward - operation to train the network
 	void feedForward(const vector<double> &inputValues);
 
-	// backPropagation learning
+	//backPropagation learning
 	void backPropagation(const vector<double> &targetValues,const double &eta ,const double &alpha);
 
 	void getResults(vector<double> &resultValues) const;
