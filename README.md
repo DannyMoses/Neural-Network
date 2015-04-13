@@ -5,7 +5,7 @@ To construct a "topology" aka the architecture of the neural network,
 simple assign the vector<unsigned> to the vector of values you desire.
 
 For example:
-'''
+''' c++
   vector<unsigned> topology;
   topology.push_back(2);
   topology.push_back(4);
