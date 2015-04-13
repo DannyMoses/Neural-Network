@@ -15,4 +15,4 @@ topology.push_back(2);
 will create a neural network with 2 input nodes, 2 hidden layers with 4 and 3 nodes, respectively,
 and an output layer of 2 nodes
 
-Great! So now what? Take a look at xordata.txt
+To be continued when I have more downtime in the lab.
