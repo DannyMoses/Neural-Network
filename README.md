@@ -7,7 +7,7 @@ General Neural Network
 
 ![](Images/image1.png)
 
-Each circle represents a Neuron. What a neuron does is sums the inputs of the outputs of the neurons that feed into it, remaps thae sum with accordance to a logistical function then sends that value to the nodes it is connected to to the right.
+Each circle represents a Neuron. What a neuron does is sums the inputs of the outputs of the neurons that feed into it multiplied by the weight of the connection, applies a logistical function  to the sum then sends that value to the nodes it is connected to to the right.
 
 ![](Images/image2.png)
 
