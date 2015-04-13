@@ -36,10 +36,12 @@ For example:
   vector<unsigned> topology (2,4,3,2);
 </tt>
 
-will create a neural network with 2 input nodes, 2 hidden layers with 4 and 3 nodes, respectively,
-and an output layer of 2 nodes.
+will create a neural network with 2 input nodes, 2 hidden layers with 4 and 3 nodes, respectively, and an output layer of 2 nodes.
 
-The declaration of a nerual network, called a Net, requires 2 parameters, a topology,
-as well as a transfer function.
+The declaration of a nerual network, called a Net, requires 2 parameters, a topology, as well as a transfer function. Proper declaration of a transfer function
+
+<tt>
+  string transferfunction = "sig"
+</tt>
 
 To be continued when I have more downtime in the lab.
