@@ -5,6 +5,7 @@ To construct a "topology" aka the architecture of the neural network,
 simple assign the vector<unsigned> to the vector of values you desire.
 
 For example:
+
 <tt>
   vector<unsigned> topology (2,4,3,2);
 </tt>
