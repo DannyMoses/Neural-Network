@@ -4,15 +4,15 @@
 
 using namespace std;
 class Connection{ 
-	static double randomWeight(){
-		return rand()/double(RAND_MAX);
-	}
+    static double randomWeight(){
+        return rand()/double(RAND_MAX);
+    }
 
 public:
-	double weight;
+    double weight;
     double deltaWeight;
 
-	Connection();
+    Connection();
 };
 
 #endif

@@ -55,6 +55,8 @@ public:
 
     double getOutputValue() const;
 
+    friend vector<double> getLayerValues(int row) const;
+
     void feedForward(const Layer &prevLayer);
 
     void calculateOutputGradients(double targetValue);
