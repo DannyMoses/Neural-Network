@@ -33,7 +33,7 @@ To start things off, you need to declare the architecture of your neural network
 For example:
 
 <tt>
-  vector<unsigned> topology (2,4,3,2);
+  vector<int> topology (2,4,3,2);
 </tt>
 
 will create a neural network with 2 input nodes, 2 hidden layers with 4 and 3 nodes, respectively, and an output layer of 2 nodes.
