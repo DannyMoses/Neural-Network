@@ -234,18 +234,19 @@ int main(int argc, char *argv[])
             //Example code:
             //vector<double> motor_values;
             //motor_values = net.getLayerValues(3);
+            
             //Send motor_values to the appropriate place
             
             //wait a finite amount of time, say 50 ms
             //to see what the motor values you just got
             //equate to in terms of sensor output
             //wait(50);
+            
             //get updated sensor data
+            //vector<double> results;
 
             //Store updataed sensor data as the output of the network,
-            //aka the last layer
             //Example code:
-            //vector<double> results;
             //net.setLayer(results, 4);
 
             // Train the net with what the outputs should have been:
