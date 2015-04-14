@@ -1,1 +1,7 @@
 /Debug/
+/.metadata/
+/RemoteSystemsTempFiles/
+/nn_implementation/.sttings/
+/nn_implementation/.cproject
+/nn_implementation/.project
+/nn_implementation/build.*
