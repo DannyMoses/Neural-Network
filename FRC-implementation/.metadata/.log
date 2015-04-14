@@ -32,3 +32,40 @@ java.io.FileNotFoundException: /home/dmoses/Neural-Network/FRC-implementation/.m
 	at org.eclipse.mylyn.internal.tasks.core.externalization.AbstractExternalizationParticipant.execute(AbstractExternalizationParticipant.java:70)
 	at org.eclipse.mylyn.internal.tasks.core.externalization.ExternalizationManager$ExternalizationJob.run(ExternalizationManager.java:222)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.egit.core 4 0 2015-04-13 22:30:13.632
+!MESSAGE An exception occurred during push on URI git@github.com:DannyMoses/Neural-Network.git: git@github.com:DannyMoses/Neural-Network.git: ProxyHTTP: com.jcraft.jsch.JSchException: java.net.UnknownHostException: proxy
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: git@github.com:DannyMoses/Neural-Network.git: ProxyHTTP: com.jcraft.jsch.JSchException: java.net.UnknownHostException: proxy
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:160)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:228)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI.execute(PushOperationUI.java:167)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI$1.run(PushOperationUI.java:229)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.jgit.errors.TransportException: git@github.com:DannyMoses/Neural-Network.git: ProxyHTTP: com.jcraft.jsch.JSchException: java.net.UnknownHostException: proxy
+	at org.eclipse.jgit.transport.JschConfigSessionFactory.getSession(JschConfigSessionFactory.java:159)
+	at org.eclipse.jgit.transport.SshTransport.getSession(SshTransport.java:136)
+	at org.eclipse.jgit.transport.TransportGitSsh$SshPushConnection.<init>(TransportGitSsh.java:320)
+	at org.eclipse.jgit.transport.TransportGitSsh.openPush(TransportGitSsh.java:166)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:154)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1200)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:156)
+	... 4 more
+Caused by: com.jcraft.jsch.JSchException: ProxyHTTP: com.jcraft.jsch.JSchException: java.net.UnknownHostException: proxy
+	at com.jcraft.jsch.ProxyHTTP.connect(ProxyHTTP.java:158)
+	at com.jcraft.jsch.Session.connect(Session.java:231)
+	at org.eclipse.jgit.transport.JschConfigSessionFactory.getSession(JschConfigSessionFactory.java:116)
+	... 10 more
+Caused by: com.jcraft.jsch.JSchException: java.net.UnknownHostException: proxy
+	at com.jcraft.jsch.Util.createSocket(Util.java:394)
+	at com.jcraft.jsch.ProxyHTTP.connect(ProxyHTTP.java:71)
+	... 12 more
+Caused by: java.net.UnknownHostException: proxy
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:208)
+	at com.jcraft.jsch.Util$1.run(Util.java:362)
+	at java.lang.Thread.run(Thread.java:745)
