@@ -1,0 +1,78 @@
+19:27:59 **** Rebuild of configuration Debug for project nn_frc_implementation ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/dmoses/wpilib/cpp/current/include -I/home/dmoses/Neural-Network/FRC-implementation/nn_frc_implementation/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/dmoses/wpilib/cpp/current/include -I/home/dmoses/Neural-Network/FRC-implementation/nn_frc_implementation/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/OI.o ../src/OI.cpp 
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/dmoses/wpilib/cpp/current/include -I/home/dmoses/Neural-Network/FRC-implementation/nn_frc_implementation/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/CommandBase.o ../src/CommandBase.cpp 
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/dmoses/wpilib/cpp/current/include -I/home/dmoses/Neural-Network/FRC-implementation/nn_frc_implementation/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Commands/ExampleCommand.o ../src/Commands/ExampleCommand.cpp 
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/dmoses/wpilib/cpp/current/include -I/home/dmoses/Neural-Network/FRC-implementation/nn_frc_implementation/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Subsystems/ExampleSubsystem.o ../src/Subsystems/ExampleSubsystem.cpp 
+arm-frc-linux-gnueabi-g++ -L/home/dmoses/wpilib/cpp/current/lib -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram src/Subsystems/ExampleSubsystem.o src/Robot.o src/OI.o src/Commands/ExampleCommand.o src/CommandBase.o -lwpi 
+19:44:00 **** Rebuild of configuration Debug for project nn_implementaion ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/dmoses/wpilib/cpp/current/include -I/home/dmoses/Neural-Network/FRC-implementation/nn_implementaion/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -L/home/dmoses/wpilib/cpp/current/lib -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram src/Robot.o -lwpi 
+21:58:03 **** Rebuild of configuration Debug for project nn_implementaion ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/dmoses/wpilib/cpp/current/include -I/home/dmoses/Neural-Network/FRC-implementation/nn_implementaion/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp:3:28: fatal error: ../include/net.h: No such file or directory
+ #include "../include/net.h"
+                            ^
+compilation terminated.
+21:58:26 **** Incremental Build of configuration Debug for project nn_implementaion ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/dmoses/wpilib/cpp/current/include -I/home/dmoses/Neural-Network/FRC-implementation/nn_implementaion/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp:56:21: error: redeclaration of 'int Robot::trainingPass'
+  int trainingPass = 0;
+                     ^
+../src/Robot.cpp:32:21: note: previous declaration 'int Robot::trainingPass'
+  int trainingPass = 0;
+                     ^
+../src/Robot.cpp:69:17: error: redeclaration of 'std::vector<double> Robot::targetValues'
+  { 120.0f, 0.0f }; // 10 feet forward, then back again
+                 ^
+../src/Robot.cpp:63:28: note: previous declaration 'std::vector<double> Robot::targetValues'
+  vector<double> inputVals, targetValues, resultValues;
+                            ^
+../src/Robot.cpp: In member function 'virtual void Robot::Test()':
+../src/Robot.cpp:138:39: error: cannot convert 'std::vector<double>::iterator {aka __gnu_cxx::__normal_iterator<double*, std::vector<double> >}' to 'float' in initialization
+    float outputVal = motor_values.end(); // yippee casting from a double to a float
+                                       ^
+22:01:19 **** Incremental Build of configuration Debug for project nn_implementaion ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/dmoses/wpilib/cpp/current/include -I/home/dmoses/Neural-Network/FRC-implementation/nn_implementaion/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'virtual void Robot::Test()':
+../src/Robot.cpp:134:57: error: no matching function for call to 'Robot::convertDoubleToFloat(std::vector<double>::iterator)'
+    myRobot.Drive(convertDoubleToFloat(motor_values.end()), 0.0f);
+                                                         ^
+../src/Robot.cpp:134:57: note: candidate is:
+../src/Robot.cpp:163:8: note: float Robot::convertDoubleToFloat(double)
+  float convertDoubleToFloat(double myDouble)
+        ^
+../src/Robot.cpp:163:8: note:   no known conversion for argument 1 from 'std::vector<double>::iterator {aka __gnu_cxx::__normal_iterator<double*, std::vector<double> >}' to 'double'
+22:08:35 **** Incremental Build of configuration Debug for project nn_implementaion ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/dmoses/wpilib/cpp/current/include -I/home/dmoses/Neural-Network/FRC-implementation/nn_implementaion/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'virtual void Robot::Test()':
+../src/Robot.cpp:134:63: error: no matching function for call to 'Robot::convertDoubleToFloat(std::vector<double>::iterator)'
+    myRobot.Drive(this->convertDoubleToFloat(motor_values.end()), 0.0f);
+                                                               ^
+../src/Robot.cpp:134:63: note: candidate is:
+../src/Robot.cpp:163:8: note: float Robot::convertDoubleToFloat(double)
+  float convertDoubleToFloat(double myDouble)
+        ^
+../src/Robot.cpp:163:8: note:   no known conversion for argument 1 from 'std::vector<double>::iterator {aka __gnu_cxx::__normal_iterator<double*, std::vector<double> >}' to 'double'
+22:10:50 **** Incremental Build of configuration Debug for project nn_implementaion ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/dmoses/wpilib/cpp/current/include -I/home/dmoses/Neural-Network/FRC-implementation/nn_implementaion/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'virtual void Robot::Test()':
+../src/Robot.cpp:134:43: error: invalid cast from type 'std::vector<double>::iterator {aka __gnu_cxx::__normal_iterator<double*, std::vector<double> >}' to type 'float'
+    myRobot.Drive((float) motor_values.end(), 0.0f);
+                                           ^
+22:19:17 **** Incremental Build of configuration Debug for project nn_implementaion ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/dmoses/wpilib/cpp/current/include -I/home/dmoses/Neural-Network/FRC-implementation/nn_implementaion/src -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -L/home/dmoses/wpilib/cpp/current/lib -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram src/trainingdata.o src/neuron.o src/net.o src/functions.o src/connection.o src/Robot.o -lwpi 
+arm-frc-linux-gnueabi-g++: error: src/trainingdata.o: No such file or directory
+arm-frc-linux-gnueabi-g++: error: src/neuron.o: No such file or directory
+arm-frc-linux-gnueabi-g++: error: src/net.o: No such file or directory
+arm-frc-linux-gnueabi-g++: error: src/functions.o: No such file or directory
+arm-frc-linux-gnueabi-g++: error: src/connection.o: No such file or directory

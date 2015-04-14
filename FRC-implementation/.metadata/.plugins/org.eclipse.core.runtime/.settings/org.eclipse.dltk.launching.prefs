@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+org.eclipse.dltk.launching.PREF_INTERPRETER_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<interpreterSettings>\n<interpreterType id\="org.dsource.ddt.ide.core.launching.DMDInstallType">\n<interpreter environmentId\="org.eclipse.dltk.core.environment.localEnvironment" id\="AUTO@/usr/bin/dmd" name\="AUTO@/usr/bin/dmd" path\="/usr/bin/dmd"/>\n</interpreterType>\n</interpreterSettings>\n
